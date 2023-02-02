@@ -17,7 +17,7 @@ export default function VideoDetail() {
           type="text/html"
           width="100%"
           height="640"
-          src={`http://www.youtube.com/embed/${video.id}`}
+          src={`https://www.youtube.com/embed/${video.id}`}
           frameBorder="0"
         />
         <div className="p-8">
@@ -27,7 +27,7 @@ export default function VideoDetail() {
         </div>
       </article>
       <section className="basis-2/6">
-        <RelatedVideos id={video.id} />
+        <RelatedVideos />
       </section>
     </section>
   );
